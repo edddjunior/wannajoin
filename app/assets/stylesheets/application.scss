@@ -7,6 +7,11 @@
   background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
 }
 
+.active-pink-2 input[type=text]:focus:not([readonly]) {
+    border-bottom: 1px solid #f48fb1;
+    box-shadow: 0 1px 0 0 #f48fb1;
+}
+
 .number-circle {
     width: 120px;
     line-height: 120px;
