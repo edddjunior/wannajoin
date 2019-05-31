@@ -5,32 +5,15 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'application' %>
+    <%= javascript_include_tag 'application' %>
   </head>
   <body>
+    <%= render partial: "layouts/header" %>
 
-    <section class="nav-menu">
-      <nav class="navbar navbar-dark bg-dark">
-        <div class="row">
-
-          <div class="ml-3 mt-2">
-            <h1 class="text-light">WannaJoin?</h1>
-          </div>
-
-          <div class="ml-3 mt-3">
-            <%= link_to "Home", root_path, :class =>"navbar-brand text-light" %>
-          </div>
-
-          <div class="ml-3">
-            <%= render :partial => "layouts/search_bar" %>
-          </div>
-
-        </div>
-      </nav>
-    </section>
-
-    <%= yield %>
+    <div class="main-content">
+      <%= yield %>
+    </div>
 
   </body>
 </html>

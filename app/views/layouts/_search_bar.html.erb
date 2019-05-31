@@ -1,11 +1,11 @@
-<form class="form-inline md-form active-pink active-pink-2 mt-2">
+<form class="search">
+  <div class="form-group">
+    <div class="row">
+      <input class="form-control search col-sm-7" type="text" placeholder="What are you looking for?" aria-label="search bar">
 
-  <div class="d-flex align-items-start">
-    <i class="material-icons md-48 mt-3" id="search-icon p2">search</i>
+      <div class="form-control col-sm-4"><%= image_tag "location-icon.png", class: "mr-1" %>Your Location</div>
+
+      <input class="col-sm-1" type="submit" value="search">
+    </div>
   </div>
-
-  <div class="d-flex align-items-end">
-    <input class="form-control form-control-lg ml-3" type="text" placeholder="What are you looking for?" aria-label="search bar">
-  </div>
-
 </form>
