@@ -1,5 +1,6 @@
 @import "material_icons";
 @import "material";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 
 /* FORMS */
 .form-control {
@@ -25,7 +26,7 @@
 /* HEADER */
 
 header {
-  background: url("banner.svg") no-repeat;
+  //background: url("banner.svg") no-repeat;
   background-size: 100%;
   min-height: 400px;
 
@@ -95,4 +96,32 @@ text-decoration:none;
   text-align: center;
   font-size: 32px;
   border: 1px solid #424242;
+}
+
+.our_app {
+  background: url("banner.svg") no-repeat;
+  background-color: #DCDCDC;
+  background-size: 100%;
+  min-height: 600px;
+}
+
+.world-img {
+  background: url("world.svg") no-repeat;
+  background-size: 80%;
+  min-height: 600px;
+}
+
+.text-blue {
+  font-size: 65px;
+  color: #6C63FF;
+}
+
+.stay-tuned-img {
+  background: url("walking.svg") no-repeat;
+  background-size: 80%;
+  min-height: 600px;
+}
+
+.stay-tuned-row {
+  background-color: #DCDCDC;
 }
