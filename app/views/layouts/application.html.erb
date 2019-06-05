@@ -12,6 +12,18 @@
     <%= render partial: "layouts/header" %>
 
     <div class="main-content">
+      <section class="search">
+        <div class="container">
+          <div class="looking-for">
+            <h1>Lorem ipsum dolor <br/> consectetur adipiscing elit</h1>
+          </div>
+
+          <div class="col-sm-12">
+            <%= render :partial => "layouts/search_bar" %>
+          </div>          
+        </div>
+      </section>
+
       <%= yield %>
     </div>
   </body>
