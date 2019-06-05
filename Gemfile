@@ -10,6 +10,7 @@ gem 'bootstrap'
 gem 'material-sass'
 gem 'material_icons'
 gem 'devise'
+gem 'high_voltage'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
