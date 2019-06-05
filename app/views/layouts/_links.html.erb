@@ -1,0 +1,11 @@
+<ul class="menu">
+  <li><%= link_to "About", "#" %></li>
+  <li><%= link_to "Contact", "#" %></li>
+  <% if user_signed_in? %>
+    <li><%= link_to "Logout", logout_path %></li>
+    <li><%= link_to "Settings", "#" %></li>
+  <% else %>
+    <li><%= link_to "Login", "#" %></li>
+    <li><%= link_to "Sign Up", signup_path %></li>
+  <% end %>
+</ul>
