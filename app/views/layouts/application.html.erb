@@ -9,6 +9,7 @@
     <%= javascript_include_tag 'application' %>
   </head>
   <body>
+    <%= render :partial => "devise/sessions/modal_login" %>
     <%= render partial: "layouts/header" %>
 
     <div class="main-content">
@@ -20,7 +21,7 @@
 
           <div class="col-sm-12">
             <%= render :partial => "layouts/search_bar" %>
-          </div>          
+          </div>
         </div>
       </section>
 
