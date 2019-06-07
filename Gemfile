@@ -11,6 +11,7 @@ gem 'material-sass'
 gem 'material_icons'
 gem 'devise'
 gem 'high_voltage'
+gem 'geocoder'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
