@@ -20,18 +20,13 @@ function geolocationSuccess(position) {
 }
 
 function geolocationError() {
-  // Handle error, for now we'll just log to console
   console.log("please enable location for this feature to work!");
 }
 
-$(document).on("ready page:ready", function() {
-  $("#current-location").on("click", function(event) {
-    event.preventDefault();
-
-    if ("geolocation" in navigator) {
-      navigator.geolocation.getCurrentPosition(geolocationSuccess, geolocationError);
-    } else {
-      alert("Geolocation not supported!");
-    }
-  });
+$(document).ready(function() {
+  if ("geolocation" in navigator) {
+    navigator.geolocation.getCurrentPosition(geolocationSuccess, geolocationError);
+  } else {
+    alert("Geolocation not supported!");
+  }
 });
