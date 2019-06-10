@@ -1,17 +1,17 @@
 module ApplicationHelper
-  def resource_name
-    :user
+
+  def show_header
+    if current_page?(root_path)
+      render :partial => 'layouts/search_content'
+    else
+    end
   end
 
-  def resource
-    @resource ||= User.new
+  def show_location
+    if current_page?(root_path)
+      render :partial => 'layouts/location'
+    else
+    end
   end
 
-  def resource_class
-    User
-  end
-
-  def devise_mapping
-    @devise_mapping ||= Devise.mappings[:user]
-  end
 end

@@ -10,23 +10,12 @@
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=<%=ENV['GOOGLEMAPS_API_TOKEN']%>&libraries=places"></script>
   </head>
   <body>
-    <%= render :partial => "devise/sessions/modal_login" %>
+
     <%= render partial: "layouts/header" %>
-
     <div class="main-content">
-      <section class="search">
-        <div class="container">
-          <div class="looking-for">
-            <h1>Lorem ipsum dolor <br/> consectetur adipiscing elit</h1>
-          </div>
-
-          <div class="col-sm-12">
-            <%= render :partial => "layouts/search_bar" %>
-          </div>
-        </div>
-      </section>
-
+      <%= show_header %>
       <%= yield %>
     </div>
+
   </body>
 </html>
