@@ -3,9 +3,7 @@
 <h1 class="text-center"><small class="lead">EVENT </small><%= @event.name %></h1>
 <blockquote class="blockquote mt-4">
 	<p class="lead text-center"><mark><%= @event.description %></mark></p>
-</blockquote>
+	<p><%= @event.host %></p>
 
-</blockquote>
-<%= link_to 'Edit', edit_event_path(@event) %>
-<%= link_to 'Destroy', event_path(@event), method: :delete, data: {confirm: "Are you sure you want to delete this?"} %>
-<%= link_to 'Back', root_path %>
+	<%= render :partial %>
+	<%= link_to 'Back', root_path %>
