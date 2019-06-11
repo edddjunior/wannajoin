@@ -1,0 +1,25 @@
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <form class="text-center border border-light p-5">
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", :class =>"input-lg form-control mb-4", :placeholder=>"E-mail" %>
+    <%= f.password_field :password, autocomplete: "current-password", :class =>"input-lg form-control mb-4", :placeholder=>"Password" %>
+    <div class="d-flex justify-content-around">
+      <div>
+        <div class="custom-control custom-checkbox">
+          <% if devise_mapping.rememberable? %>
+            <%= f.check_box :remember_me, :class =>"input-lg custom-control-input" %>
+            <%= f.label :remember_me, :class=>"custom-control-label" %>
+          <% end %>
+        </div>
+      </div>
+      <div>
+        <a href="">Forgot password?</a>
+      </div>
+    </div>
+    <%= f.submit "Log in", :class =>"btn btn-login btn-lg btn-block my-4" %>
+    <p class="text-center">Don't you have an account?
+      <%= link_to "Register", signup_path %>
+    </p>
+    <p class="text-center">or sign in with:</p>
+    <%= link_to "#", :class=>"btn" %>
+  </form>
+<% end %>

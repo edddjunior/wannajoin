@@ -1,6 +1,5 @@
 @import "material_icons";
 @import "material";
-@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 
 /* FORMS */
 .form-control {
@@ -93,11 +92,6 @@ section.search {
   line-height: 50px;
 }
 
-.btn-create {
-  width: 100%;
-  line-height: 50px;
-}
-
 a:link
 {
 text-decoration:none;
@@ -112,6 +106,7 @@ text-decoration:none;
   border: 1px solid #424242;
 }
 
+/* ABOUT PAGE */
 .our_app {
   background: url("banner.svg") no-repeat;
   background-color: #DCDCDC;
@@ -138,4 +133,38 @@ text-decoration:none;
 
 .stay-tuned-row {
   background-color: #DCDCDC;
+}
+
+/* LOGIN FORM */
+.container-login {
+  background-color: #DCDCDC;
+  height: 100vh;
+}
+
+.background-login {
+  background-color: #ffffff;
+  margin-top: 10%;
+}
+
+.btn-login {
+  background-color: #6c63ff;
+}
+
+/* SIGN UP FORM */
+.container-signup {
+  background-color: #DCDCDC;
+  height: 100vh;
+}
+
+.background-signup {
+  background-color: #ffffff;
+  margin-top: 0;
+}
+
+.left-side {
+  background-color: #6c63ff;
+}
+
+.btn-signup {
+  background-color: #6c63ff;
 }

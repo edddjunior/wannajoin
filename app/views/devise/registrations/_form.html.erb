@@ -1,0 +1,41 @@
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+  <form class="text-center border border-light p-5">
+    <div class="form-group mb-4">
+      <%= f.text_field :username, autofocus: true, autocomplete: "username", :class=>"input-lg form-control mb-4", :placeholder=>"Username" %>
+      <%= f.email_field :email, autofocus: true, autocomplete: "email", :class=>"input-lg form-control mb-4", :placeholder=>"E-mail" %>
+      <% if @minimum_password_length %>
+      <%= f.password_field :password, autocomplete: "new-password", :class=>"input-lg form-control", :placeholder=>"Password" %>
+      <small class="form-text text-muted mb-4">(<%= @minimum_password_length %> characters minimum)</small>
+      <% end %>
+      <%= f.password_field :password_confirmation, autocomplete: "new-password", :class=>"input-lg form-control", :placeholder=>"Password confirmation" %>
+      <%= f.submit "Sign up", :class=>"btn btn-lg btn-signup my-4 btn-block" %>
+    </div>
+
+    <!-- Social register -->
+    <p>or sign up with:</p>
+
+    <a type="button" class="light-blue-text mx-2">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+    <a type="button" class="light-blue-text mx-2">
+        <i class="fab fa-twitter"></i>
+    </a>
+    <a type="button" class="light-blue-text mx-2">
+        <i class="fab fa-linkedin-in"></i>
+    </a>
+    <a type="button" class="light-blue-text mx-2">
+        <i class="fab fa-github"></i>
+    </a>
+
+    <hr>
+
+    <!-- Terms of service -->
+    <p>By clicking
+        <em>Sign up</em> you agree to our
+        <a href="" target="_blank">terms of service</a>
+
+  </form>
+<% end %>
+
+<%= render "devise/shared/links" %>
