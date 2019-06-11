@@ -1,5 +1,4 @@
 module ApplicationHelper
-
   def show_header
     if current_page?(root_path)
       render :partial => 'layouts/search_content'
@@ -13,5 +12,4 @@ module ApplicationHelper
     else
     end
   end
-
 end
