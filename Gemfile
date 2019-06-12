@@ -12,6 +12,8 @@ gem 'material_icons'
 gem 'devise'
 gem 'high_voltage'
 gem 'geocoder'
+gem 'geocoder'
+gem 'omniauth-google-oauth2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
