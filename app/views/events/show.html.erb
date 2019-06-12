@@ -3,7 +3,6 @@
 <h1 class="text-center"><small class="lead">EVENT </small><%= @event.name %></h1>
 <blockquote class="blockquote mt-4">
 	<p class="lead text-center"><mark><%= @event.description %></mark></p>
-	<p><%= @event.host %></p>
+	<p><%= @event.user.username %></p>
 
-	<%= render :partial %>
 	<%= link_to 'Back', root_path %>

@@ -26,7 +26,7 @@ class EventsController < ApplicationController
   # POST /events
   # POST /events.json
   def create
-    @event = Event.new(event_params)
+    @event = current_user.events.build(event_params)
 
     respond_to do |format|
       if @event.save
@@ -65,6 +65,9 @@ class EventsController < ApplicationController
 
   private
     # Use callbacks to share common setup or constraints between actions.
+
+    delegate :user_id, :to => :user
+
     def set_event
       @event = Event.find(params[:id])
     end
@@ -72,7 +75,7 @@ class EventsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def event_params
       params.require(:event).permit(
-        :name, :description, :image
+        :name, :description, :image, :user_id
       )
     end
 end
