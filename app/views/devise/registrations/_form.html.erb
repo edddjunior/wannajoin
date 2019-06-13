@@ -9,7 +9,7 @@
       <small class="form-text text-muted mb-4">(<%= @minimum_password_length %> characters minimum)</small>
       <% end %>
       <%= f.password_field :password_confirmation, autocomplete: "new-password", :class=>"input-lg form-control", :placeholder=>"Password confirmation" %>
-      <%= f.submit "Sign up", :class=>"btn btn-lg btn-signup my-4 btn-block" %>
+      <%= f.submit "Sign up", :class=>"btn btn-lg btn-primary my-4 btn-block" %>
     </div>
 
     <!-- Social register -->
@@ -32,9 +32,9 @@
 
     <!-- Terms of service -->
     <p>By clicking
-        <em>Sign up</em> you agree to our
-        <a href="" target="_blank">terms of service</a>
-
+      <em>Sign up</em> you agree to our
+      <a href="" target="_blank">terms of service</a>
+    </p>
   </form>
 <% end %>
 

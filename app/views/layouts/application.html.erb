@@ -9,13 +9,19 @@
     <%= javascript_include_tag 'application' %>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=<%=ENV['GOOGLEMAPS_API_TOKEN']%>&libraries=places"></script>
   </head>
-  <body>
+  <body class="<%= controller_name %>">
 
-    <%= render partial: "layouts/header" %>
+    <% if controller_name == 'events' %>
+      <%= render partial: "layouts/header" %>
+    <% end %>
+
     <div class="main-content">
       <%= show_header %>
       <%= yield %>
     </div>
 
+    <% if controller_name =! 'sessions' %>
+      <%= render partial: "layouts/footer" %>
+    <% end %>
   </body>
 </html>
