@@ -9,8 +9,8 @@ function geolocationSuccess(position) {
   geocoder.geocode({'location': latlng}, function(results, status) {
     if (status === google.maps.GeocoderStatus.OK) {
       if (results[0]){
-        var user_address = results[0].formatted_address;
-        document.getElementById("current_location").innerHTML = user_address;
+        var user_city = results[0].address_components.filter(ac=>~ac.types.indexOf('locality'))[0].long_name;
+        document.getElementById("current_location").innerHTML = user_city;
       }else {
         console.log('No results found for these coords.');
       }
