@@ -65,7 +65,6 @@ header {
 
 /* FOOTER */
 footer {
-  background: #eceaea;
   margin-top: 40px;
   padding: 10px 0;
 }
@@ -74,6 +73,8 @@ footer {
 
 .main-content {
   margin-top: 67px;
+  position: relative;
+  border:1px solid red;
 
   .looking-for {
     margin-bottom: 30px;
@@ -120,34 +121,44 @@ text-decoration:none;
 }
 
 /* ABOUT PAGE */
-.our_app {
-  background: url("banner.svg") no-repeat;
-  background-color: #DCDCDC;
-  background-size: 100%;
-  min-height: 600px;
-}
+#about {
+  .bg-gray {
+    background: #DCDCDC;
+  }
 
-.world-img {
-  background: url("world.svg") no-repeat;
-  background-size: 80%;
-  min-height: 600px;
-}
+  .text-blue {
+    font-size: 65px;
+    color: #6C63FF;
+  }
 
-.text-blue {
-  font-size: 65px;
-  color: #6C63FF;
-}
+  section.stay-tuned {
+    padding: 40px 0;
 
-.stay-tuned-img {
-  background: url("walking.svg") no-repeat;
-  background-size: 80%;
-  min-height: 600px;
-}
+    .stay-tuned-img {
+      background: url("walking.svg") no-repeat;
+      background-size: 80%;
+      min-height: 350px;
+    }
+  }
 
-.stay-tuned-row {
-  background-color: #DCDCDC;
-}
+  section.around-world {
+    padding: 40px 0;
 
+    .world-img {
+      background: url("world.svg") no-repeat;
+      background-size: 80%;
+      min-height: 370px;
+    }
+  }
+
+  .our-app {
+    padding: 40px 0;
+    background: url("banner.svg") no-repeat;
+    background-color: #DCDCDC;
+    background-size: 100%;
+    min-height: 400px;
+  }
+}
 /* LOGIN */
 body.sessions, body.registrations {
   background-color: #DCDCDC;
