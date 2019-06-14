@@ -11,13 +11,9 @@
   </head>
   <body class="<%= controller_name %>">
 
-    <%= render partial: "layouts/header" %>
-
     <div class="main-content">
-      <%= show_header %>
       <%= yield %>
     </div>
 
-    <%= render partial: "layouts/footer" %>
   </body>
 </html>
