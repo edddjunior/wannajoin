@@ -16,8 +16,10 @@
     <div class="main-content">
       <%= show_header %>
       <%= yield %>
-    </div>
 
-    <%= render partial: "layouts/footer" %>
+      <div class="pd-6">
+        <%= render partial: "layouts/footer" %>
+      </div>
+    </div>
   </body>
 </html>
