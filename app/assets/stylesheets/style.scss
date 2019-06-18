@@ -1,5 +1,8 @@
 @import "material_icons";
 @import "material";
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Mouse+Memoirs&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800&display=swap');
 
 /* GENERAL */
 html,body {
@@ -137,12 +140,15 @@ text-decoration:none;
   }
 
   .text-blue {
-    font-size: 65px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 70px;
     color: #6C63FF;
+    font-weight: 800;
+    margin-top: 20px;
   }
 
   section.stay-tuned {
-    padding: 40px 0;
+    padding: 40px 0 20px 0;
 
     .stay-tuned-img {
       background: url("walking.svg") no-repeat;
@@ -155,8 +161,8 @@ text-decoration:none;
     padding: 40px 0;
 
     .world-img {
-      background: url("world.svg") no-repeat;
-      background-size: 80%;
+      background: url("world.svg") no-repeat center;
+      background-size: 75%;
       min-height: 370px;
     }
   }
