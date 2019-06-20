@@ -17,6 +17,8 @@
       <%= show_header %>
       <%= yield %>
 
+      <% render :partial => "flash/flash" %>
+
       <div class="pd-6">
         <%= render partial: "layouts/footer" %>
       </div>
