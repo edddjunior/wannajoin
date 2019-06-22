@@ -2,7 +2,7 @@
   <li><%= link_to "About", page_path("about") %></li>
   <li><%= link_to "Events", root_path %></li>
   <% if user_signed_in? %>
-    <li><%= link_to "Friends", users_path %></li>
+    <li><%= link_to "Friends", friends_path %></li>
     <li><%= link_to "Settings", "#" %></li>
     <li><%= link_to "Logout", logout_path %></li>
   <% else %>

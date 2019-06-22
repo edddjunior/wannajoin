@@ -1,0 +1,5 @@
+<%= friend_request.friender.username %>
+<%= form_for friend_request do |f| %>
+  <%= f.submit "Accept", :name => 'accepted', class: "btn" %>
+  <%= f.submit "Decline", class: "btn" %>
+<% end %>

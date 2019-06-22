@@ -1,1 +1,4 @@
 <%= @user.username %>
+<%= link_to "Send friend request",
+              friendships_path(friended_id: @user.id), method: :post,
+              class: "btn" %>

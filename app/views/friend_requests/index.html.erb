@@ -1,0 +1,16 @@
+<div class="friend-requests-wrapper box">
+  <h1>Friend Requests</h1>
+
+  <table>
+  	<% @pending_friend_requests.each do |friend_request| %>
+  	  <%= render "form", friend_request: friend_request %>
+  	<% end %>
+
+  	<% @requested_friend_requests.each do |friend_request|%>
+      <tr>
+        <td class="user-name"><%= friend_request.friended.username %></td>
+        <td>Pending</td>
+      </tr>
+  	<% end %>
+  </table>
+</div>

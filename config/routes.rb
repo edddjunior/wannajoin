@@ -7,5 +7,8 @@ Rails.application.routes.draw do
     get "signup", :to => "devise/registrations#new"
   end
   resources :users, :only => [ :index, :show ]
+  resources :friendships, :only => [:create, :update, :destroy]
+  get "friend_requests", to: "friend_requests#index"
+  get "friends", to: "friends#index"
   resources :events
 end

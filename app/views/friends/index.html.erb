@@ -1,0 +1,11 @@
+<% @friends.each do |friend| %>
+  <%= link_to "#{friend.username}", friend %></td>
+  <%= button_to "Unfriend",
+                friendship_path(current_user.find_friendship(friend)),
+                data: { confirm: "Are you sure?" },
+                method: :delete,
+                class: "btn" %>
+<% end %>
+<%= link_to "Add more friends", users_path %>
+<br>
+<%= link_to "Friend requests", friend_requests_path  %>
