@@ -3,15 +3,22 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.3'
 
-# custom rubygems
+# CUSTOM RUBYGEMS
+# Development
 gem 'dotenv-rails', groups: [:development, :test]
+# Frontend
 gem 'jquery-rails'
 gem 'bootstrap'
 gem 'material-sass'
 gem 'material_icons'
+# Authentication
 gem 'devise'
-gem 'high_voltage'
+# Geolocation
 gem 'geocoder'
+# General purposes
+gem 'high_voltage'
+# Tests
+gem 'rspec-rails', '~> 3.8'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
@@ -61,7 +68,6 @@ group :development do
 end
 
 group :test do
-  gem 'rspec-rails', '~> 3.8'
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
